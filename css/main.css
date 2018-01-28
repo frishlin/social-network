@@ -1,0 +1,35 @@
+body {
+    background-color: #00acc1;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#first-view {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#runner-img {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 16%;
+    margin-bottom: 3%;
+    width: auto;
+}
+
+#log-in-button,
+#sign-up-button,
+#user-button {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+#log-in {
+    display: none;
+}
+
+#sign-up {
+    display: none;
+}
