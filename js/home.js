@@ -66,10 +66,19 @@ function paintRoutines() {
     }
 }
 
-function paintGroups() {
+function paintEvents() {
 
 }
 
-function paintEvents() {
-
+function paintGroups() {
+    for (var i = 0; i < data['groups'].length; i++) {
+        var groupName = data['groups'][i]['group-name']
+        var groupPost = data['groups'][i]['post']
+        var $groupDiv = $('<div />')
+        var $name = $('<p />')
+        var $post = $('<p />')
+        $name.text(groupName);
+        $post.text(groupPost)
+        $('#group-wrapper').append($groupDiv)
+    }
 }

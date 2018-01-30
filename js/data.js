@@ -77,10 +77,19 @@ var data = {
     ]
 
     ,
-    'grupos': {
-        'Corredores del Bosque de Tlalpan': '¿Alguien puede recomendarme un quiropráctico en la zona Sur del DF?',
-        'Corredores sabatinos del Bosque de Chapultepec': 'El entrenamiento del sábado comenzará a las 7:00 am',
-        'Corredores de la Marquesa': 'El próximo evento es el 10 de febrero',
-    }
+    'groups': [{
+            'group-name': 'Corredores del Bosque de Tlalpan',
+            'post': '¿Alguien puede recomendarme un quiropráctico en la zona Sur del DF?',
+        },
+        {
+            'group-name': 'Corredores sabatinos del Bosque de Chapultepec',
+            'post': 'El entrenamiento del sábado comenzará a las 7:00 am',
+        },
+        {
+            'group-name': 'Corredores de la Marquesa',
+            'post': 'El próximo evento es el 10 de febrero'
+        }
 
+
+    ]
 }

@@ -48,7 +48,6 @@ textarea {
     margin-bottom: 17px;
 }
 
-#select {
-    background: red;
-    width: 100px;
+#filter-input {
+    margin-top: 14px;
 }
