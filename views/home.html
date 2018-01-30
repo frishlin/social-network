@@ -24,6 +24,7 @@
             <div class="col s4 m4 l3 options">
                 <li><a id="newsfeed-button" href="#">News Feed</a></li>
                 <li><a id="routines-button" href="#">Programas de entrenamiento</a></li>
+                <li><a id="recipes-button" href="#">Recetas</a></li>
                 <li><a id="events-button" href="#">Eventos</a></li>
                 <li><a id="groups-button" href="#">Grupos</a></li>
             </div>
@@ -39,33 +40,28 @@
                     </div>
                 </div>
                 <div id="routines-section">
-                    <div class="container-fluid">
-                        <div class="row" id="routines">
-                            <div class="col s6" id="plan">
-                                <p>Plan</p>
-                            </div>
-                            <div class="col s6" id="diet">
-                                <p>dieta</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="recipes">
-                    </div>
+                </div>
+                <div id="recipes-section">
+<p>recetas</p>
                 </div>
                 <div id="events-section">
+                    <div class="row">
                     <div class="input-field col s5">
-                        <select class="filter">
-                            <option value="" selected>Eligue una opción</option>
-                            <option value="locales">Eventos locales</option>
-                            <option value="nacionales">Eventos nacionales</option>
-                            <option value="internacionales">Eventos internacionales</option>
+                        <select id="filter">
+                            <option value="all" selected>Todos los eventos</option>
+                            <option value="local">Eventos locales</option>
+                            <option value="nacional">Eventos nacionales</option>
+                            <option value="internacional">Eventos internacionales</option>
                         </select>
                         <label>Eventos</label>
                     </div>
                     <div class="col s5">
                         <input id="filter-input" type="text" placeholder="Filtrar eventos">
                     </div>
+                </div>
+                <div class="row" id="events-wrapper">
+
+                </div>
                 </div>
                 <div id="groups-section">
                     <div id="group-wrapper">
