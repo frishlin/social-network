@@ -76,23 +76,37 @@ function paintNewsFeed() {
 function paintRoutines() {
     for (var i = 0; i < data['programs'].length; i++) {
         var $routinesDiv = $('<div />')
-    
-
-
-
-
-        var $distance = $('<h6 />')
+            var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
         $routinesDiv.append($distance)
         $('#routines-section').append($routinesDiv)
+        for(var j = 0; j < data['programs'][i]['rutina'].length; j++){
+            var routineDay = data['programs'][i]['rutina'][j];
+            var $routineDay = $('<p />');
+            $routineDay.text(routineDay)
+            $('#routines-section').append($routineDay)
+        }
 
     }
 }
 
 
 function paintRecipes(){
-    console.log('hola')
+    for (var i = 0; i < data['programs'].length; i++) {
+        var $recipesDiv = $('<div />')
+        var $distance = $('<h5 />')
+        var distance = data['programs'][i]['distancia']
+        $distance.append(distance)
+        $recipesDiv.append($distance)
+        $('#recipes-section').append($recipesDiv)
+        for(var j = 0; j < data['programs'][i]['recetas'].length; j++){
+            var recipeDay = data['programs'][i]['recetas'][j];
+            var $recipeDay = $('<p />')
+            $recipeDay.text(recipeDay)
+            $('#recipes-section').append($recipeDay)
+        }
+    }
 }
 
 

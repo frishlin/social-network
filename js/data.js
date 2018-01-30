@@ -42,37 +42,38 @@ var data = {
     ],
     'programs': [{
             'distancia': '5 kilómetros',
-            'rutina': {
-                'lunes': 'Trotar 4km, 30 lagartijas',
-                'martes': 'Correr 2km, 50 sentadillas',
-                'miércoles': 'Trotar 5km, 40 abdominales',
-                'jueves': 'Correr 3km, 40 lagartijas, 100 sentadillas',
-                'viernes': 'Correr 4km'
-            },
-            'recetas': {
-                'lunes': 'Licuado de plátano con proteína',
-                'martes': 'Jugo verde, claras de huevo con verdura',
-                'miércoles': 'Pan integral con aguacate',
-                'jueves': 'Una taza de avena con leche de almendra',
-                'viernes': 'Una taza de papaya con espinaca'
-            }
+            'rutina': [
+                'Lunes: Trotar 4km, 30 lagartijas',
+               'Martes: Correr 2km, 50 sentadillas',
+                'Miércoles: Trotar 5km, 40 abdominales',
+                'Jueves: Correr 3km, 40 lagartijas, 100 sentadillas',
+                'Viernes: Correr 4km'
+            ],
+            'recetas': [
+                'Lunes: Licuado de plátano con proteína',
+                'Martes: Jugo verde, claras de huevo con verdura',
+                'Miércoles: Pan integral con aguacate',
+                'Jueves: Una taza de avena con leche de almendra',
+                'Viernes: Una taza de papaya con espinaca'
+            ]
         },
         {
             'distancia': '10 kilómetros',
-            'rutina': {
-                'lunes': 'Trotar 6km, 30 lagartijas, 50 sentadillas',
-                'martes': 'Correr 5km, 80 sentadillas',
-                'miércoles': 'Trotar 7km, 40 abdominales, 100 sentadillas, 40 lagartijas',
-                'jueves': 'Correr 6km, 40 lagartijas, 120 sentadillas',
-                'viernes': 'Correr 7km'
-            },
-            'recetas': {
-                'lunes': 'Tres plátanos, 10 nueces, una taza de yogurt',
-                'martes': 'Pan integral con aguacate',
-                'miércoles': 'Claras de huevo con espinaca',
-                'jueves': 'Licuado de piña, nopal, espinaca, apio, coco y chía',
-                'viernes': 'Licuado de nopal, kiwi y manzana'
-            }
+            'rutina': [
+
+                'Lunes: Trotar 6km, 30 lagartijas, 50 sentadillas',
+                'Martes: Correr 5km, 80 sentadillas',
+                'Miércoles: Trotar 7km, 40 abdominales, 100 sentadillas, 40 lagartijas',
+                'Jueves: Correr 6km, 40 lagartijas, 120 sentadillas',
+                'Viernes: Correr 7km'
+            ],
+            'recetas': [
+                'Lunes: Tres plátanos, 10 nueces, una taza de yogurt',
+                'Martes: Pan integral con aguacate',
+                'Miércoles: Claras de huevo con espinaca',
+                'Jueves: Licuado de piña, nopal, espinaca, apio, coco y chía',
+                'Viernes: Licuado de nopal, kiwi y manzana'
+            ]
         }
     ]
 
