@@ -30,6 +30,11 @@ body {
     display: none;
 }
 
+#log-in .back-button-log-in,
+#sign-up .back-button-sign-up {
+    color: black;
+}
+
 #sign-up {
     display: none;
 }

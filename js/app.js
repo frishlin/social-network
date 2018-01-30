@@ -2,6 +2,8 @@ $(document).ready(function() {
     $('#log-in-button').click(logInFunction)
     $('#sign-up-button').click(signUpFunction)
     $('#user-button').click(validateUser)
+    $('#back-button-log-in').click(backPageLogIn)
+    $('#back-button-sign-up').click(backPageSignUp)
 });
 
 function logInFunction() {
@@ -21,5 +23,16 @@ function validateUser() {
     } else {
         alert('Ingresa una cuenta válida')
     }
+}
 
+function backPageLogIn() {
+
+    $('#first-view').show()
+    $('#log-in').hide()
+}
+
+
+function backPageSignUp() {
+    $('#first-view').show()
+    $('#sign-up').hide()
 }
