@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row navbar">
+            <p>NavBar</p>
+        </div>
+        <div class="row">
+
+            <div class="col s4 m4 l3 options">
+                <li><a id="newsfeed-button" href="#">News Feed</a></li>
+                <li><a id="routines-button" href="#">Programas de entrenamiento</a></li>
+                <li><a id="events-button" href="#">Eventos</a></li>
+                <li><a id="groups-button" href="#">Grupos</a></li>
+            </div>
+
+            <div class="col s8 m8 l9 layout">
+                <div id="newsfeed-section">
+                    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                    <a id="pic-button" class="waves-effect btn"><i class="material-icons left">photo</i></a>
+
+                    <a id="publish-button" class="waves-effect waves-light btn">Publicar</a>
+                    <div id="feed-wrapper">
+
+                    </div>
+                </div>
+                <div id="routines-section">
+                    <div class="container-fluid">
+                        <div class="row" id="routines">
+                            <div class="col s6" id="plan">
+                                <p>Plan</p>
+                            </div>
+                            <div class="col s6" id="diet">
+                                <p>dieta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="recipes">
+                    </div>
+                </div>
+                <div id="events-section">
+                    <div class="input-field">
+                        <label>Browser Select</label>
+                        <select class="browser-default">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div id="groups-section">
+                    <div id="group-wrapper">
+                        <p>Grupos</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="../js/home.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+</body>
+
+</html>

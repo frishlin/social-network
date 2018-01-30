@@ -1,0 +1,54 @@
+body {
+    /* background-color: #26A69A;*/
+    margin: 0;
+}
+
+.navbar {
+    background: #E57373;
+}
+
+.options {
+    background: #90A4AE;
+}
+
+.options li {
+    list-style: none;
+}
+
+.options li a {
+    color: black;
+}
+
+
+/*.layout {
+      background: #26A69A;
+}*/
+
+#contacts-section,
+#routines-section,
+#events-section,
+#groups-section {
+    display: none;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffff;
+    color: #898888;
+    max-height: 400px;
+    font-size: 18px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+#select {
+    background: red;
+    width: 100px;
+}

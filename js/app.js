@@ -17,7 +17,7 @@ function signUpFunction() {
 function validateUser() {
 
     if ($('#user').val() === 'frish.lin@laboratoria.la' && $('#password').val() === 'frish.lin@laboratoria.la') {
-        window.location.href = 'views/profile.html'
+        window.location.href = 'views/home.html'
     } else {
         alert('Ingresa una cuenta válida')
     }
