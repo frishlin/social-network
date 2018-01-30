@@ -2,11 +2,12 @@ $(document).ready(loadPage);
 
 function loadPage() {
     $('#newsfeed-button').click(showNewsFeed);
+    $('#newsfeed-button').addClass('active-button')
     paintNewsFeed();
     $('#routines-button').click(showRoutines);
     paintRoutines();
     $('#recipes-button').click(showRecipes)
-paintRecipes();
+    paintRecipes();
     $('#events-button').click(showEvents);
     paintEvents(data['events']);
     $('#groups-button').click(showGroups);
@@ -14,10 +15,15 @@ paintRecipes();
     $('select').material_select();
     $('#filter').change(filterSelect)
     $('#filter-input').keyup(filterInput)
-  
+
 }
 
 function showNewsFeed() {
+    $('#newsfeed-button').addClass('active-button')
+    $('#routines-button').removeClass('active-button')
+    $('#recipes-button').removeClass('active-button')
+    $('#events-button').removeClass('active-button')
+    $('#groups-button').removeClass('active-button')
     $('#newsfeed-section').show()
     $('#routines-section').hide()
     $('#recipes-section').hide()
@@ -26,6 +32,11 @@ function showNewsFeed() {
 }
 
 function showRoutines() {
+    $('#newsfeed-button').removeClass('active-button')
+    $('#routines-button').addClass('active-button')
+    $('#recipes-button').removeClass('active-button')
+    $('#events-button').removeClass('active-button')
+    $('#groups-button').removeClass('active-button')
     $('#newsfeed-section').hide()
     $('#routines-section').show()
     $('#recipes-section').hide()
@@ -33,7 +44,12 @@ function showRoutines() {
     $('#groups-section').hide()
 }
 
-function showRecipes(){
+function showRecipes() {
+    $('#newsfeed-button').removeClass('active-button')
+    $('#routines-button').removeClass('active-button')
+    $('#recipes-button').addClass('active-button')
+    $('#events-button').removeClass('active-button')
+    $('#groups-button').removeClass('active-button')
     $('#newsfeed-section').hide()
     $('#routines-section').hide()
     $('#recipes-section').show()
@@ -42,6 +58,11 @@ function showRecipes(){
 }
 
 function showEvents() {
+    $('#newsfeed-button').removeClass('active-button')
+    $('#routines-button').removeClass('active-button')
+    $('#recipes-button').removeClass('active-button')
+    $('#events-button').addClass('active-button')
+    $('#groups-button').removeClass('active-button')
     $('#newsfeed-section').hide()
     $('#routines-section').hide()
     $('#recipes-section').hide()
@@ -50,6 +71,11 @@ function showEvents() {
 }
 
 function showGroups() {
+    $('#newsfeed-button').removeClass('active-button')
+    $('#routines-button').removeClass('active-button')
+    $('#recipes-button').removeClass('active-button')
+    $('#events-button').removeClass('active-button')
+    $('#groups-button').addClass('active-button')
     $('#newsfeed-section').hide()
     $('#routines-section').hide()
     $('#recipes-section').hide()
@@ -76,12 +102,12 @@ function paintNewsFeed() {
 function paintRoutines() {
     for (var i = 0; i < data['programs'].length; i++) {
         var $routinesDiv = $('<div />')
-            var $distance = $('<h5 />')
+        var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
         $routinesDiv.append($distance)
         $('#routines-section').append($routinesDiv)
-        for(var j = 0; j < data['programs'][i]['rutina'].length; j++){
+        for (var j = 0; j < data['programs'][i]['rutina'].length; j++) {
             var routineDay = data['programs'][i]['rutina'][j];
             var $routineDay = $('<p />');
             $routineDay.text(routineDay)
@@ -92,7 +118,7 @@ function paintRoutines() {
 }
 
 
-function paintRecipes(){
+function paintRecipes() {
     for (var i = 0; i < data['programs'].length; i++) {
         var $recipesDiv = $('<div />')
         var $distance = $('<h5 />')
@@ -100,7 +126,7 @@ function paintRecipes(){
         $distance.append(distance)
         $recipesDiv.append($distance)
         $('#recipes-section').append($recipesDiv)
-        for(var j = 0; j < data['programs'][i]['recetas'].length; j++){
+        for (var j = 0; j < data['programs'][i]['recetas'].length; j++) {
             var recipeDay = data['programs'][i]['recetas'][j];
             var $recipeDay = $('<p />')
             $recipeDay.text(recipeDay)
@@ -112,24 +138,24 @@ function paintRecipes(){
 
 function paintEvents(events) {
     $('#events-wrapper').empty()
-for(var i = 0; i < events.length; i++) {
-    var $eventDiv = $('<div />')
-    var eventName = events[i]['name']
+    for (var i = 0; i < events.length; i++) {
+        var $eventDiv = $('<div />')
+        var eventName = events[i]['name']
 
-    var eventDate = events[i]['date']
-    var eventPlace = events[i]['place']
-$eventName = $('<p />',  { 'class': 'name-search' })
-$eventDate = $('<p />')
-$eventPlace = $('<p />')
-$eventName.text(eventName)
-$eventDate.text(eventDate)
-$eventPlace.text(eventPlace)
-$eventDiv.append($eventName)
-$eventDiv.append($eventDate)
-$eventDiv.append($eventPlace)
-$('#events-wrapper').append($eventDiv)
+        var eventDate = events[i]['date']
+        var eventPlace = events[i]['place']
+        $eventName = $('<p />', { 'class': 'name-search' })
+        $eventDate = $('<p />')
+        $eventPlace = $('<p />')
+        $eventName.text(eventName)
+        $eventDate.text(eventDate)
+        $eventPlace.text(eventPlace)
+        $eventDiv.append($eventName)
+        $eventDiv.append($eventDate)
+        $eventDiv.append($eventPlace)
+        $('#events-wrapper').append($eventDiv)
 
-}
+    }
 }
 
 function paintGroups() {
@@ -148,36 +174,28 @@ function paintGroups() {
 }
 
 function filterSelect() {
-var filteredEvents = []
-var area = $('#filter').val()
-for(var i = 0; i < data['events'].length; i++){
-
-   if(area === data['events'][i]['area']){
-       filteredEvents.push(data['events'][i])
-   } else if (area === 'all') {
-    filteredEvents.push(data['events'][i])
-   }
-}
-
-
-paintEvents(filteredEvents)
-
-}
-
-
-function filterInput(){
-var search = $('#filter-input').val().trim().toLowerCase()
-$('.name-search').each(function(){
-    if ($(this).text().toLowerCase().indexOf(search) === -1){
-$(this).parent().hide()
-
-    } else if ($(this).text().toLowerCase().indexOf(search) !== -1){
-        $(this).parent().show()
-
+    var filteredEvents = []
+    var area = $('#filter').val()
+    for (var i = 0; i < data['events'].length; i++) {
+        if (area === data['events'][i]['area']) {
+            filteredEvents.push(data['events'][i])
+        } else if (area === 'all') {
+            filteredEvents.push(data['events'][i])
+        }
     }
+    paintEvents(filteredEvents)
+
+}
 
 
-})
+function filterInput() {
+    var search = $('#filter-input').val().trim().toLowerCase()
+    $('.name-search').each(function() {
+        if ($(this).text().toLowerCase().indexOf(search) === -1) {
+            $(this).parent().hide()
 
-
+        } else if ($(this).text().toLowerCase().indexOf(search) !== -1) {
+            $(this).parent().show()
+        }
+    })
 }

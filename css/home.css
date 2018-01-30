@@ -19,6 +19,10 @@ body {
     color: black;
 }
 
+.active-button {
+    background: red;
+}
+
 
 /*.layout {
       background: #26A69A;
@@ -27,7 +31,8 @@ body {
 #contacts-section,
 #routines-section,
 #events-section,
-#groups-section {
+#groups-section,
+#recipes-section {
     display: none;
 }
 

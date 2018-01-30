@@ -44,7 +44,7 @@ var data = {
             'distancia': '5 kilómetros',
             'rutina': [
                 'Lunes: Trotar 4km, 30 lagartijas',
-               'Martes: Correr 2km, 50 sentadillas',
+                'Martes: Correr 2km, 50 sentadillas',
                 'Miércoles: Trotar 5km, 40 abdominales',
                 'Jueves: Correr 3km, 40 lagartijas, 100 sentadillas',
                 'Viernes: Correr 4km'
@@ -78,67 +78,66 @@ var data = {
     ]
 
     ,
-    'events':[
-{
-    'area': 'local',
-    'place': 'Mexico, DF',
-    'name': 'Love & friends: corre en pareja',
-    'date': '18 de febrero'
-},
-{
-    'area': 'local',
-    'place': 'Mexico, DF',
-    'name': 'Carrera Colegio Americano',
-    'date': '4 de marzo'
-    },
-{
-    'area': 'local',
-    'place': 'Mexico, DF',
-    'name': 'Medio Maratón ESPN',
-    'date': '6 de mayo'
-    },
-{
-    'area': 'local',
-    'place': 'Mexico, DF',
-    'name': 'Carrera FUCAM contra el cáncer de mama',
-    'date': '28 de enero'
-    },
-{
-    'area': 'nacional',
-    'place': 'Guadalajara, Jal',
-    'name': 'Carrera Bonafont 2018',
-    'date': '11 de marzo'
-    },
-{
-    'area': 'nacional',
-    'place': 'Tequila, Jal',
-    'name': 'XX Medio Maratón Mundo Cuervo',
-    'date': '19 de noviembre'
-    },
-{
-    'area': 'nacional',
-    'place': 'Monterrey, NL',
-    'name': 'Carrera Imagen Monterrey',
-    'date': '11 de febrero'
-    },
-{
-    'area': 'internacional',
-    'place': 'Outback, Australia',
-    'name': 'Australian Outback Marathon',
-    'date': '28 de julio'
-    },
-{
-    'area': 'internacional',
-    'place': 'Boston, USA',
-    'name': 'Boston Marathon',
-    'date': '16 de abril'
-    },
-{
-    'area': 'internacional',
-    'place': ' Ellsworth Mountains',
-    'name': 'Antartic Ice Marathon',
-    'date': '13 de diciembre'
-    },
+    'events': [{
+            'area': 'local',
+            'place': 'Mexico, DF',
+            'name': 'Love & friends: corre en pareja',
+            'date': '18 de febrero'
+        },
+        {
+            'area': 'local',
+            'place': 'Mexico, DF',
+            'name': 'Carrera Colegio Americano',
+            'date': '4 de marzo'
+        },
+        {
+            'area': 'local',
+            'place': 'Mexico, DF',
+            'name': 'Medio Maratón ESPN',
+            'date': '6 de mayo'
+        },
+        {
+            'area': 'local',
+            'place': 'Mexico, DF',
+            'name': 'Carrera FUCAM contra el cáncer de mama',
+            'date': '28 de enero'
+        },
+        {
+            'area': 'nacional',
+            'place': 'Guadalajara, Jal',
+            'name': 'Carrera Bonafont 2018',
+            'date': '11 de marzo'
+        },
+        {
+            'area': 'nacional',
+            'place': 'Tequila, Jal',
+            'name': 'XX Medio Maratón Mundo Cuervo',
+            'date': '19 de noviembre'
+        },
+        {
+            'area': 'nacional',
+            'place': 'Monterrey, NL',
+            'name': 'Carrera Imagen Monterrey',
+            'date': '11 de febrero'
+        },
+        {
+            'area': 'internacional',
+            'place': 'Outback, Australia',
+            'name': 'Australian Outback Marathon',
+            'date': '28 de julio'
+        },
+        {
+            'area': 'internacional',
+            'place': 'Boston, USA',
+            'name': 'Boston Marathon',
+            'date': '16 de abril'
+        },
+        {
+            'area': 'internacional',
+            'place': ' Ellsworth Mountains',
+            'name': 'Antartic Ice Marathon',
+            'date': '13 de diciembre'
+        },
 
 
 
@@ -147,7 +146,7 @@ var data = {
     ],
     'groups': [{
             'group-name': 'Corredores del Bosque de Tlalpan',
-            'post': '¿Alguien puede recomendarme un quiropráctico en la zona Sur del DF?',
+            'post': '¿Alguien puede recomendarme un fisioterapeuta en la zona Sur del DF?',
         },
         {
             'group-name': 'Corredores sabatinos del Bosque de Chapultepec',
