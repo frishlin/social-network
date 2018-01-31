@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Social Run</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
@@ -14,137 +15,146 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><img src="../assets/images/logo.png" width="60" alt=""> </a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a title="Notificaciones" href="sass.html"><i class="fa fa-bell fa-2x" aria-hidden="true"></i></a></li>
-            <li><a title="Amigos" href="badges.html"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></li>
-            <li><a title="Mensajes" href="collapsible.html"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a></li>
-            <li><a title="Configuración" href="mobile.html"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><div class="user-view">
-              <div class="background">
-                <img src="../assets/images/run1.jpg" class="responsive-img">
-              </div>
-              <a href="#!user"><img class="circle" src="../assets/images/me1.jpg"></a>
-              <a href="#!name"><span class="white-text name">Frishlin</span></a>
-              <a href="#!email"><span class="white-text email">frish.lin@laboratoria.la</span></a>
-            </div></li>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">
+                        <span id="logo">SOCIAL RUN</span>
+                    </a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a title="Notificaciones" href="#"><i class="fa fa-bell fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a title="Amigos" href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a title="Mensajes" href="#"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a title="Configuración" href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img src="../assets/images/run1.jpg" class="responsive-img">
+                                </div>
+                                <a href="#!user"><img class="circle" src="../assets/images/me1.jpg"></a>
+                                <a href="#!name"><span class="white-text name">Frishlin</span></a>
+                                <a href="#!email"><span class="white-text email">frish.lin@laboratoria.la</span></a>
+                            </div>
+                        </li>
 
-            <li><a href="sass.html">News Feed</a></li>
-            <li><a href="badges.html">Programas de entrenamiento</a></li>
-            <li><a href="collapsible.html">Recetas</a></li>
-            <li><a href="mobile.html">Eventos</a></li>
-              <li><a href="mobile.html">Grupos</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col full-col s3 m3 center-align hide-on-small-only">
-        <div class="row">
-          <div class="col full-col s12 m12 left-align options">
-            <br/>  <li><a id="newsfeed-button" href="#">News Feed</a></li>
-            <br/> <li><a id="routines-button" href="#">Programas de entrenamiento</a></li>
-            <br/> <li><a id="recipes-button" href="#">Recetas</a></li>
-            <br/> <li><a id="events-button" href="#">Eventos</a></li>
-            <br/> <li><a id="groups-button" href="#">Grupos</a></li>
-          </div>
-        </div>
-      </div>
-
-      <div class="col full-col s9 m6 teal left-align">
-        <div class="row">
-          <div class="col full-col s12 m12 left-align layout">
-            <div id="newsfeed-section">
-              <textarea name="textarea" id="" cols="30" rows="10"></textarea>
-                <a id="pic-button" class="waves-effect btn"><i class="material-icons left">photo</i></a>
-                <a id="publish-button" class="waves-effect waves-light btn disabled">Publicar</a>
-                <div id="feed-wrapper"></div>
+                        <li><a href="#">News Feed</a></li>
+                        <li><a href="#">Programas de entrenamiento</a></li>
+                        <li><a href="#">Recetas</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Grupos</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="routines-section"></div>
-            <div id="recipes-section"></div>
-            <div id="events-section">
-              <div class="row">
-                <div class="input-field col s5">
-                  <select id="filter">
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col full-col s3 m3 center-align hide-on-small-only">
+                <div class="row">
+                    <div class="col full-col s12 m12 left-align options">
+                        <br/>
+                        <li><a id="newsfeed-button" href="#">News Feed</a></li>
+                        <br/>
+                        <li><a id="routines-button" href="#">Programas de entrenamiento</a></li>
+                        <br/>
+                        <li><a id="recipes-button" href="#">Recetas</a></li>
+                        <br/>
+                        <li><a id="events-button" href="#">Eventos</a></li>
+                        <br/>
+                        <li><a id="groups-button" href="#">Grupos</a></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col full-col s9 m6 teal left-align">
+                <div class="row">
+                    <div class="col full-col s12 m12 left-align layout">
+                        <div id="newsfeed-section">
+                            <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                            <a id="pic-button" class="waves-effect btn"><i class="material-icons left">photo</i></a>
+                            <a id="publish-button" class="waves-effect waves-light btn disabled">Publicar</a>
+                            <div id="feed-wrapper"></div>
+                        </div>
+                        <div id="routines-section"></div>
+                        <div id="recipes-section"></div>
+                        <div id="events-section">
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <select id="filter">
                     <option value="all" selected>Todos los eventos</option>
                     <option value="local">Eventos locales</option>
                     <option value="nacional">Eventos nacionales</option>
                     <option value="internacional">Eventos internacionales</option>
                   </select>
-                  <label>Eventos</label>
+                                    <label>Eventos</label>
+                                </div>
+                                <div class="col s5">
+                                    <input id="filter-input" type="text" placeholder="Filtrar eventos">
+                                </div>
+                            </div>
+                            <div class="row" id="events-wrapper"></div>
+                        </div>
+                        <div id="groups-section">
+                            <div id="group-wrapper"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s5">
-                  <input id="filter-input" type="text" placeholder="Filtrar eventos">
+            </div>
+
+            <div class="col full-col s3 m3 center-align additional">
+                <div class="row">
+                    <div class="col s12 m12 left-align caja">
+                        <div>
+                            <p class="titles center-align">Nuevos amigos</p>
+                            <div class="col s3 hide-on-small-only">
+                                <a title="Gaby" href="#!user"><img class="circle friends" src="../assets/images/gaby.jpg"></a>
+                            </div>
+                            <div class="col s3  hide-on-small-only">
+                                <a title="Sofi" href="#!user"><img class="circle friends" src="../assets/images/sofi.jpg"></a>
+                            </div>
+                            <div class="col s3  hide-on-small-only">
+                                <a title="Jess" href="#!user"><img class="circle friends" src="../assets/images/jess.jpg"></a>
+                            </div>
+                            <div class="col s3  hide-on-small-only">
+                                <a title="Sandy" href="#!user"><img class="circle friends" src="../assets/images/sandy.jpg"></a>
+                            </div>
+                            <div class="col s5  hide-on-large-only">
+                                <a title="Gaby" href="#!user"><img class="circle friends" src="../assets/images/gaby.jpg"></a>
+                            </div>
+                            <div class="col s5  hide-on-large-only">
+                                <a title="Sofi" href="#!user"><img class="circle friends" src="../assets/images/sofi.jpg"></a>
+                            </div>
+                            <div class="col s5  hide-on-large-only">
+                                <a title="Sandy" href="#!user"><img class="circle friends" src="../assets/images/sandy.jpg"></a>
+                            </div>
+                            <div class="col s5  hide-on-large-only">
+                                <a title="Jess" href="#!user"><img class="circle friends" src="../assets/images/jess.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row" id="events-wrapper"></div>
-            </div>
-            <div id="groups-section">
-              <div id="group-wrapper"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+                <div class="row">
+                    <div class="col s12 m12"></div>
+                    <div class="col s12 m12 caja">
+                        <br/> <img src="../assets/images/agendatlon.png" alt="calendario" width="35">
+                        <p class="titles center-align">Carreras que te pueden interesar</p>
+                        <a href="https://goo.gl/8w9ZtH" target="_blank"><i>7a Carrera Cardias</i></a><br/><br/>
+                        <a href="https://goo.gl/jAxm1g" target="_blank"><i>Medio Maratón Internacional Construyendo el nuevo Acapulco</i></a><br/><br/>
+                        <a href="https://goo.gl/4QmPqW" target="_blank"><i>I Love Run</i></a><br/><br/>
+                        <a href="https://goo.gl/L6kNT9" target="_blank"><i>Fan Race NFL 2018</i></a><br/><br/>
+                        <a href="https://goo.gl/MNEVbH" target="_blank"><i>21K Tarahumara</i></a><br/><br/>
+                        <a href="https://goo.gl/N53uiC" target="_blank"><i>AT&T Run</i></a><br/><br/>
+                    </div>
+                </div>
 
-      <div class="col full-col s3 m3 center-align additional">
-        <div class="row">
-          <div class="col s12 m12 left-align caja">
-            <div>
-              <p class="titles center-align">Nuevos amigos</p>
-              <div class="col s3 hide-on-small-only">
-                <a title="Gaby" href="#!user"><img class="circle friends" src="../assets/images/gaby.jpg"></a>
-              </div>
-              <div class="col s3  hide-on-small-only">
-                <a title="Sofi" href="#!user"><img class="circle friends" src="../assets/images/sofi.jpg"></a>
-              </div>
-              <div class="col s3  hide-on-small-only">
-                <a title="Jess" href="#!user"><img class="circle friends" src="../assets/images/jess.jpg"></a>
-              </div>
-              <div class="col s3  hide-on-small-only">
-                <a title="Sandy" href="#!user"><img class="circle friends" src="../assets/images/sandy.jpg"></a>
-              </div>
-              <div class="col s5  hide-on-large-only">
-                <a title="Gaby" href="#!user"><img class="circle friends" src="../assets/images/gaby.jpg"></a>
-              </div>
-              <div class="col s5  hide-on-large-only">
-                <a title="Sofi" href="#!user"><img class="circle friends" src="../assets/images/sofi.jpg"></a>
-              </div>
-              <div class="col s5  hide-on-large-only">
-                <a title="Sandy" href="#!user"><img class="circle friends" src="../assets/images/sandy.jpg"></a>
-              </div>
-              <div class="col s5  hide-on-large-only">
-                <a title="Jess" href="#!user"><img class="circle friends" src="../assets/images/jess.jpg"></a>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col s12 m12"></div>
-          <div class="col s12 m12 caja">
-            <br/> <img src="../assets/images/agendatlon.png" alt="calendario" width="35">
-            <p class="titles center-align">Carreras que te pueden interesar</p>
-            <a href="https://goo.gl/8w9ZtH" target="_blank"><i>7a Carrera Cardias</i></a><br/><br/>
-            <a href="https://goo.gl/jAxm1g" target="_blank"><i>Medio Maratón Internacional Construyendo el nuevo Acapulco</i></a><br/><br/>
-            <a href="https://goo.gl/4QmPqW" target="_blank"><i>I Love Run</i></a><br/><br/>
-            <a href="https://goo.gl/L6kNT9" target="_blank"><i>Fan Race NFL 2018</i></a><br/><br/>
-            <a href="https://goo.gl/MNEVbH" target="_blank"><i>21K Tarahumara</i></a><br/><br/>
-            <a href="https://goo.gl/N53uiC" target="_blank"><i>AT&T Run</i></a><br/><br/>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

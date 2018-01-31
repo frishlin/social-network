@@ -10,6 +10,7 @@ $(document).ready(function() {
     $('#email-input').keyup(validSignUpEmail)
     $('#password-input').keyup(validSignUpPassword)
     $('#repassword-input').keyup(validSignUpRepassword)
+    $('#user-button-sign-up').click(createCount)
 });
 
 function logInFunction() {
@@ -24,7 +25,7 @@ function signUpFunction() {
 
 function validateUser() {
 
-    if ($('#user').val() === 'frish.lin@laboratoria.la' && $('#password').val() === 'frish.lin@laboratoria.la') {
+    if ($('#user').val() === 'marisol' && $('#password').val() === '123') {
         window.location.href = 'views/home.html'
     } else {
         alert('Ingresa una cuenta válida')
@@ -104,4 +105,8 @@ function validSignUp() {
         $('#user-button-sign-up').addClass('disabled');
     }
 
+}
+
+function createCount() {
+    window.location.href = 'views/home.html'
 }

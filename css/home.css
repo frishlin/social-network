@@ -1,32 +1,33 @@
 body {
-  color: white;
-  margin: 0;
+    color: white;
+    margin: 0;
 }
-#sidenav-overlay{
-  z-index: 1;
+
+#sidenav-overlay {
+    z-index: 1;
 }
 
 #sidenav a {
-  color: white;
+    color: white;
 }
+
 
 /* .navbar {
     background: #E57373;
 } */
 
-.options, .additional {
-  height: 100vh;
-  background: #1b756d !important;
-  
+.options,
+.additional {
+    height: 100vh;
+    background: #1b756d !important;
 }
 
-.options  {
-  border: 1px solid white;
+.options {
+    border: 1px solid white;
 }
 
 .options li {
-  list-style: none;
-
+    list-style: none;
 }
 
 .options li a {
@@ -34,39 +35,37 @@ body {
     width: 100%;
 }
 
+
 /*.active-button {
     background: rgb(138, 226, 138);
 
 }*/
 
 .layout {
-  background: rgb(67, 207, 193);
-  height: 100vh;
-  color: white;
+    background: rgb(67, 207, 193);
+    height: 100vh;
+    color: white;
 }
 
-.navbar-fixed nav{
-  background-color: #26A69A;
+.navbar-fixed nav {
+    background-color: #26A69A;
 }
 
-#mobile-demo{
+#mobile-demo {
     background-color: rgb(67, 207, 193);
 }
 
-.friends{
-  width: 40px;
+.friends {
+    width: 40px;
 }
 
-.titles{
-  font-weight: bold;
+.titles {
+    font-weight: bold;
 }
-
-
 
 .caja a {
-  color: white;
+    color: white;
 }
-
 
 #contacts-section,
 #routines-section,
@@ -98,8 +97,13 @@ textarea {
 }
 
 .border-div {
-  border: 1px solid white;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#logo {
+    color: white;
+    font-family: 'Oxygen', sans-serif;
 }

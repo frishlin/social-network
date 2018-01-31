@@ -1,6 +1,6 @@
 $(document).ready(loadPage);
 
-$( document ).ready(function(){
+$(document).ready(function() {
     $(".button-collapse").sideNav();
     window_size = $(document).height();
     $('.full-col').height(window_size);
@@ -24,6 +24,7 @@ function loadPage() {
     $('#filter-input').keyup(filterInput)
     $('#publish-button').click(publishFeed)
     $('textarea').keyup(activatePublishButton)
+
 
 }
 
@@ -96,7 +97,7 @@ function paintNewsFeed() {
     for (var i = 0; i < data['newsfeed'].length; i++) {
         var name = (data['newsfeed'][i]['user']);
         var post = (data['newsfeed'][i]['post']);
-        var $postDiv = $('<div />', { 'class': 'border-div'})
+        var $postDiv = $('<div />', { 'class': 'border-div' })
         var $name = $('<p />')
         var $post = $('<p />')
         $name.text(name)
@@ -110,7 +111,7 @@ function paintNewsFeed() {
 
 function paintRoutines() {
     for (var i = 0; i < data['programs'].length; i++) {
-        var $routinesDiv =  $('<div />',  { 'class': 'border-div'})
+        var $routinesDiv = $('<div />', { 'class': 'border-div' })
         var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
@@ -120,7 +121,7 @@ function paintRoutines() {
             var routineDay = data['programs'][i]['rutina'][j];
             var $routineDay = $('<p />');
             $routineDay.text(routineDay)
-            
+
             $routinesDiv.append($routineDay)
         }
 
@@ -130,7 +131,7 @@ function paintRoutines() {
 
 function paintRecipes() {
     for (var i = 0; i < data['programs'].length; i++) {
-        var $recipesDiv = $('<div />',  { 'class': 'border-div'})
+        var $recipesDiv = $('<div />', { 'class': 'border-div' })
         var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
@@ -149,7 +150,7 @@ function paintRecipes() {
 function paintEvents(events) {
     $('#events-wrapper').empty()
     for (var i = 0; i < events.length; i++) {
-        var $eventDiv =  $('<div />', { 'class': 'border-div'})
+        var $eventDiv = $('<div />', { 'class': 'border-div' })
         var eventName = events[i]['name']
         var eventDate = events[i]['date']
         var eventPlace = events[i]['place']
@@ -171,7 +172,7 @@ function paintGroups() {
     for (var i = 0; i < data['groups'].length; i++) {
         var groupName = data['groups'][i]['group-name']
         var groupPost = data['groups'][i]['post']
-        var $groupDiv =  $('<div />', { 'class': 'border-div'})
+        var $groupDiv = $('<div />', { 'class': 'border-div' })
         var $name = $('<p />')
         var $post = $('<p />')
         $name.text(groupName);
@@ -211,23 +212,23 @@ function filterInput() {
 
 
 function publishFeed() {
-var $feedDiv = $('<div />')
-var $feedUser = $('<div />')
-var $feedText = $('<p />')
-var userFeed = $('textarea').val()
-$feedUser.text('User')
-$feedText.text(userFeed)
-$feedDiv.append($feedUser)
-$feedDiv.append($feedText)
-$('#feed-wrapper').prepend($feedDiv)
-$('textarea').val(' ')
+    var $feedDiv = $('<div />', { 'class': 'border-div' })
+    var $feedUser = $('<div />')
+    var $feedText = $('<p />')
+    var userFeed = $('textarea').val()
+    $feedUser.text('Marisol')
+    $feedText.text(userFeed)
+    $feedDiv.append($feedUser)
+    $feedDiv.append($feedText)
+    $('#feed-wrapper').prepend($feedDiv)
+    $('textarea').val(' ')
 }
 
-function activatePublishButton(){
-if($('textarea').val().trim().length !== 0){
-   $('#publish-button').removeClass('disabled')
-} else {
-    $('#publish-button').addClass('disabled')
-}
+function activatePublishButton() {
+    if ($('textarea').val().trim().length !== 0) {
+        $('#publish-button').removeClass('disabled')
+    } else {
+        $('#publish-button').addClass('disabled')
+    }
 
 }
