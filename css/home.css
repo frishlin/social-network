@@ -1,33 +1,64 @@
 body {
-    /* background-color: #26A69A;*/
-    margin: 0;
+
+  margin: 0;
+}
+#sidenav-overlay{
+  z-index: 1;
+
 }
 
-.navbar {
+/* .navbar {
     background: #E57373;
+} */
+
+.options, .additional {
+  height: 100vh;
+  background: #f1f8e9;
 }
 
-.options {
-    background: #90A4AE;
+.options  {
+  border: 1px solid green;
 }
 
 .options li {
     list-style: none;
+
 }
+
 
 .options li a {
     color: black;
 }
 
 .active-button {
-    background: red;
+    background: yellow;
+
 }
 
+.layout {
+  background: #dcedc8;
+  height: 100vh;
+}
 
-/*.layout {
-      background: #26A69A;
-}*/
+.navbar-fixed nav{
+  background-color: #dcedc8;
+}
 
+#mobile-demo{
+    background-color: #dcedc8;
+}
+
+.friends{
+  width: 40px;
+}
+
+.titles{
+  font-weight: bold;
+}
+
+.caja{
+  border: 1px solid green;
+}
 #contacts-section,
 #routines-section,
 #events-section,
