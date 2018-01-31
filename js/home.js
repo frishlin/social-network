@@ -108,7 +108,7 @@ function paintNewsFeed() {
 
 function paintRoutines() {
     for (var i = 0; i < data['programs'].length; i++) {
-        var $routinesDiv = $('<div />')
+        var $routinesDiv =  $('<div />',  { 'class': 'border-div'})
         var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
@@ -118,7 +118,8 @@ function paintRoutines() {
             var routineDay = data['programs'][i]['rutina'][j];
             var $routineDay = $('<p />');
             $routineDay.text(routineDay)
-            $('#routines-section').append($routineDay)
+            
+            $routinesDiv.append($routineDay)
         }
 
     }
@@ -127,7 +128,7 @@ function paintRoutines() {
 
 function paintRecipes() {
     for (var i = 0; i < data['programs'].length; i++) {
-        var $recipesDiv = $('<div />')
+        var $recipesDiv = $('<div />',  { 'class': 'border-div'})
         var $distance = $('<h5 />')
         var distance = data['programs'][i]['distancia']
         $distance.append(distance)
@@ -137,7 +138,7 @@ function paintRecipes() {
             var recipeDay = data['programs'][i]['recetas'][j];
             var $recipeDay = $('<p />')
             $recipeDay.text(recipeDay)
-            $('#recipes-section').append($recipeDay)
+            $recipesDiv.append($recipeDay)
         }
     }
 }
@@ -146,9 +147,8 @@ function paintRecipes() {
 function paintEvents(events) {
     $('#events-wrapper').empty()
     for (var i = 0; i < events.length; i++) {
-        var $eventDiv = $('<div />')
+        var $eventDiv =  $('<div />', { 'class': 'border-div'})
         var eventName = events[i]['name']
-
         var eventDate = events[i]['date']
         var eventPlace = events[i]['place']
         $eventName = $('<p />', { 'class': 'name-search' })
@@ -169,7 +169,7 @@ function paintGroups() {
     for (var i = 0; i < data['groups'].length; i++) {
         var groupName = data['groups'][i]['group-name']
         var groupPost = data['groups'][i]['post']
-        var $groupDiv = $('<div />')
+        var $groupDiv =  $('<div />', { 'class': 'border-div'})
         var $name = $('<p />')
         var $post = $('<p />')
         $name.text(groupName);

@@ -61,9 +61,7 @@ body {
   font-weight: bold;
 }
 
-.caja{
-  border: 1px solid white;
-}
+
 
 .caja a {
   color: white;
@@ -105,7 +103,10 @@ textarea {
   height: 100%;
 }
 
-.boder-div {
-border: 1px solid white !important;
+.border-div {
+border: 1px solid white;
+border-radius: 5px;
+margin: 5px;
+padding: 10px;
 
 }
