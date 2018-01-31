@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Social Run</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -29,7 +29,7 @@
                 <a href="" class="back-button-log-in"><i class="material-icons">arrow_back</i></a>
                 <input placeholder="Usuario" id="user" type="text">
                 <input placeholder="Contraseña" id="password" type="password">
-                <a id="user-button" class="waves-effect waves-light btn disabled">Entrar</a>
+                <a id="user-button-log-in" class="waves-effect waves-light btn disabled">Entrar</a>
             </div>
         </div>
     </section>
@@ -37,11 +37,11 @@
         <div class="container">
             <div class="input-field">
                 <a href="" class="back-button-sign-up"><i class="material-icons">arrow_back</i></a>
-                <input placeholder="Nombre de usuario" id="username" type="text">
-                <input placeholder="Correo electrónico" id="email" type="email">
-                <input placeholder="Contraseña" type="password">
-                <input placeholder="Confirmar contraseña" type="password">
-                <a id="user-button" class="waves-effect waves-light btn disabled">Crear cuenta</a>
+                <input id="user-input" placeholder="Nombre de usuario" id="username" type="text">
+                <input id="email-input" placeholder="Correo electrónico" id="email" type="email">
+                <input id="password-input" placeholder="Contraseña" type="password">
+                <input id="repassword-input" placeholder="Confirmar contraseña" type="password">
+                <a id="user-button-sign-up" class="waves-effect waves-light btn disabled">Crear cuenta</a>
             </div>
         </div>
 
@@ -61,8 +61,9 @@
         };
         firebase.initializeApp(config);
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
     <script type="text/javascript " src="js/app.js"></script>
 
 </body>
