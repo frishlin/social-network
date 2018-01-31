@@ -1,4 +1,7 @@
 https://biokah.github.io/social-network/
+Usuario: marisol
+Contraseña: 123
+
 
 ### SOBRE EL PRODUCTO
 El objetivo de este proyecto es crear una red social que cumpla los siguientes requisitos:
