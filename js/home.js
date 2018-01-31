@@ -15,6 +15,8 @@ function loadPage() {
     $('select').material_select();
     $('#filter').change(filterSelect)
     $('#filter-input').keyup(filterInput)
+    $('#publish-button').click(publishFeed)
+    $('textarea').keyup(activatePublishButton)
 
 }
 
@@ -198,4 +200,27 @@ function filterInput() {
             $(this).parent().show()
         }
     })
+}
+
+
+function publishFeed() {
+var $feedDiv = $('<div />')
+var $feedUser = $('<div />')
+var $feedText = $('<p />')
+var userFeed = $('textarea').val()
+$feedUser.text('User')
+$feedText.text(userFeed)
+$feedDiv.append($feedUser)
+$feedDiv.append($feedText)
+$('#feed-wrapper').prepend($feedDiv)
+$('textarea').val(' ')
+}
+
+function activatePublishButton(){
+if($('textarea').val().trim().length !== 0){
+   $('#publish-button').removeClass('disabled')
+} else {
+    $('#publish-button').addClass('disabled')
+}
+
 }

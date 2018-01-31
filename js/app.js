@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#log-in-button').click(logInFunction)
     $('#sign-up-button').click(signUpFunction)
-    $('#user-button').click(validateUser)
+    $('#user-button-log-in').click(validateUser)
     $('#back-button-log-in').click(backPageLogIn)
     $('#back-button-sign-up').click(backPageSignUp)
     $('#user').keyup(validLogInUser)
