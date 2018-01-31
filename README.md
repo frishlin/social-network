@@ -99,7 +99,7 @@ Desde la perspectiva financiera, nuestra propuesta pretende tener sustentabilida
 
 ### SKETCH 
 
-
+![sketch1](assets/images/sketch1.jpg)
 
 
 ### Herramientas:
@@ -107,6 +107,5 @@ Desde la perspectiva financiera, nuestra propuesta pretende tener sustentabilida
 - Funciones y herramientas JavaScript como parte del desarrollo Front-end
 - Librería JQuery
 - Framework Materialize como herramienta visual y facilitador para logar un diseño responsivo que pueda utilizarse en cualquier dispositivo. 
-- Firebase como provedor de una base de datos para almacenar información de los usuarios.  
 
 

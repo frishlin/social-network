@@ -21,7 +21,8 @@ body {
 
 #log-in-button,
 #sign-up-button,
-#user-button {
+#user-button-sign-up, 
+#user-button-log-in {
     background-color: black;
     font-family: 'Lato', sans-serif;
 }

@@ -1,10 +1,13 @@
 body {
-
+  color: white;
   margin: 0;
 }
 #sidenav-overlay{
   z-index: 1;
+}
 
+#sidenav a {
+  color: white;
 }
 
 /* .navbar {
@@ -13,39 +16,41 @@ body {
 
 .options, .additional {
   height: 100vh;
-  background: #f1f8e9;
+  background: #1b756d !important;
+  
 }
 
 .options  {
-  border: 1px solid green;
+  border: 1px solid white;
 }
 
 .options li {
-    list-style: none;
+  list-style: none;
 
 }
-
 
 .options li a {
-    color: black;
+    color: white;
+    width: 100%;
 }
 
-.active-button {
-    background: yellow;
+/*.active-button {
+    background: rgb(138, 226, 138);
 
-}
+}*/
 
 .layout {
-  background: #dcedc8;
+  background: rgb(67, 207, 193);
   height: 100vh;
+  color: white;
 }
 
 .navbar-fixed nav{
-  background-color: #dcedc8;
+  background-color: #26A69A;
 }
 
 #mobile-demo{
-    background-color: #dcedc8;
+    background-color: rgb(67, 207, 193);
 }
 
 .friends{
@@ -57,8 +62,14 @@ body {
 }
 
 .caja{
-  border: 1px solid green;
+  border: 1px solid white;
 }
+
+.caja a {
+  color: white;
+}
+
+
 #contacts-section,
 #routines-section,
 #events-section,
@@ -86,4 +97,15 @@ textarea {
 
 #filter-input {
     margin-top: 14px;
+}
+
+
+.col {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.boder-div {
+border: 1px solid white !important;
+
 }

@@ -94,7 +94,7 @@ function paintNewsFeed() {
     for (var i = 0; i < data['newsfeed'].length; i++) {
         var name = (data['newsfeed'][i]['user']);
         var post = (data['newsfeed'][i]['post']);
-        var $postDiv = $('<div />')
+        var $postDiv = $('<div />', { 'class': 'border-div'})
         var $name = $('<p />')
         var $post = $('<p />')
         $name.text(name)
