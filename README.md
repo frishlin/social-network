@@ -100,6 +100,9 @@ Desde la perspectiva financiera, nuestra propuesta pretende tener sustentabilida
 ### SKETCH 
 
 ![sketch1](assets/images/sketch1.jpg)
+![sketch2](assets/images/sketch2.jpg)
+![sketch3](assets/images/sketch3.jpg)
+![sketch4](assets/images/sketch4.jpg)
 
 
 ### Herramientas:
