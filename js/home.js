@@ -1,7 +1,9 @@
 $(document).ready(loadPage);
 
 $( document ).ready(function(){
-   $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav();
+    window_size = $(document).height();
+    $('.full-col').height(window_size);
 })
 
 
