@@ -1,5 +1,10 @@
 $(document).ready(loadPage);
 
+$( document ).ready(function(){
+   $(".button-collapse").sideNav();
+})
+
+
 function loadPage() {
     $('#newsfeed-button').click(showNewsFeed);
     $('#newsfeed-button').addClass('active-button')
