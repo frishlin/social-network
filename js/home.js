@@ -24,7 +24,21 @@ function loadPage() {
     $('#filter-input').keyup(filterInput)
     $('#publish-button').click(publishFeed)
     $('textarea').keyup(activatePublishButton)
+    $('.material-icons').click(lateralMenu)
 
+}
+
+function lateralMenu(){
+  $('#newsfeed-button-mobile').click(showNewsFeed);
+  paintNewsFeed();
+  $('#routines-button-mobile').click(showRoutines);
+  paintRoutines();
+  $('#recipes-button-mobile').click(showRecipes)
+  paintRecipes();
+  $('#events-button-mobile').click(showEvents);
+  paintEvents(data['events']);
+  $('#groups-button-mobile').click(showGroups);
+  paintGroups();
 
 }
 
